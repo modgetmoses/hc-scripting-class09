@@ -4,7 +4,7 @@
 # Create Azure Resounces
 Resource_Group_Name=testRG
 APPSERVICE_PLAN_NAME=my-app-plan$RANDOM
-WEBAPP_NAME=my-web-app$RANDOM
+WEBAPP_NAME=modgetweb$RANDOM
 deployment_source=https://github.com/Azure-Samples/html-docs-hello-world
 Location=UKSouth
 # Create an App Service Plan
