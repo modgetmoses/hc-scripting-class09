@@ -13,4 +13,3 @@ az appservice plan create --name $APPSERVICE_PLAN_NAME --resource-group $Resourc
 az webapp create --name $WEBAPP_NAME --plan $APPSERVICE_PLAN_NAME --resource-group $Resource_Group_Name 
 #Deploy an app from GitHub to Azure App service
 az webapp deployment source config --branch master --manual-integration --name $WEBAPP_NAME --repo-url $deployment_source --resource-group $Resource_Group_Name
-# az webapp deployment source config --branch master --manual-integration --name $WEBAPP_NAME --repo-url $deployment_source --resource-group $Resource_Group_Name
