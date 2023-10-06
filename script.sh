@@ -12,4 +12,5 @@ az appservice plan create --name $APPSERVICE_PLAN_NAME --resource-group $Resourc
 # create a web app
 az webapp create --name $WEBAPP_NAME --plan $APPSERVICE_PLAN_NAME --resource-group $Resource_Group_Name 
 #Deploy an app from GitHub to Azure App service
-az webapp deployment source config --repo-url $deployment_source --branch master --manual-integration -name $WEBAPP_NAME --resource-group $Resource_Group_Name
+# az webapp deployment source config --repo-url $deployment_source --branch master --manual-integration -name $WEBAPP_NAME --resource-group $Resource_Group_Name
+az webapp deployment source config --branch master --manual-integration --name MyWebApp --repo-url https://github.com/Azure-Samples/function-image-upload-resize --resource-group $Resource_Group_Name
